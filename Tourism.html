@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tourism Attractions</title>
+		<meta charset="utf-8"/>
+  <style>
+        /* Header Styling */
+        header {
+            background: linear-gradient(to right, #d40000ab, #77901ec1, #007a33);
+            color: white;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            height: 100px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        header img {
+          position: absolute;
+          height: 150px; /* Adjust size as needed */
+          width: 200px;
+          bottom:0px ;
+          animation: img 10s linear infinite;
+          animation-fill-mode: forwards;
+        }
+        @keyframes img{
+            0%   {background-color:rgba(255, 174, 0, 0.68); left:0px;}
+            50%  {background-color:rgba(255, 0, 0, 0.632); left:1100px;}
+            100% { left:0px;}
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0px;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            position: relative;
+            animation:nav 3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes nav{
+            0%   {background-color:rgba(255, 174, 0, 0.68); left:0px;}
+            50%  {background-color:rgba(255, 0, 0, 0.632); left:200px;}
+            100% { left:0px;}
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .bouncing-box {
+            width: 400px;
+            height: 50px;
+            color:#5b3212;
+            background-color: linear-gradient(to right, #d40000, #77901ec1, #007a33);;
+            position: relative;
+            border-radius: 10px;
+            animation:box 3s;
+           animation-fill-mode: forwards
+            
+        }
+        @keyframes box {
+            0%   {background-color:rgba(255, 174, 0, 0.68); left:0px; top:0px;}
+            25%  {background-color:rgba(255, 0, 0, 0.632); left:0px; top:100px;}
+            50%  {background-color:rgba(0, 0, 255, 0.452); left:100px; top:0px;}
+            75%  {background-color:rgba(0, 128, 0, 0.372); left:200px; top:100px;}
+            100% {background-color: linear-gradient(to right, #d40000, #77901ec1, #007a33);;  left:430px; top:0px;}
+        }
+        .blurred-background {
+          background-image: url(lebanese\ food.jpg);
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-size: cover;
+           background-position: center;
+           filter: blur(4px);
+            z-index: -1;
+        }
+        .img {
+            width: 300px;
+            height: 50px;
+            object-fit: cover;
+        }
+        /*places section style*/
+        ul{
+          list-style-type: none;
+        }
+        li img{
+          width:600px ;
+          height:400px ;
+        }
+        .places {
+          font-size: 20px;
+          background-color: rgba(180, 230, 209, 0.808);
+          }
+          #div1 {animation-timing-function: linear;}
+          #div2 {animation-timing-function: ease;}
+          #div3 {animation-timing-function: ease-in;}
+          #div4 {animation-timing-function: ease-out;}
+          #div5 {animation-timing-function: ease-in-out;}
+
+
+        .right{
+          padding:10px;
+          right:-1300px;
+          direction: rtl;
+          text-align: right;
+          position: relative;
+          animation:place-right 3s;
+          animation-fill-mode: forwards;
+        }
+        .left{
+          position: relative;
+          left:-1300px;
+          animation:place-left 3s;
+          animation-fill-mode: forwards;
+        }
+        .imgs{
+          width:400px ;
+          height:200px ;
+        }
+        @keyframes place-left{
+             from { left:-1300px;}
+            to { left:0px;}
+        }
+        @keyframes place-right{
+             from { right:-1300px;}
+            to { right:0px;}
+        }
+            footer {
+            background: #3333336b;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #023517;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+</style>
+</head>
+<header>
+  <h1 class="bouncing-box">Lebanese Tourism</h1>
+  <nav>
+    <a href="Home.html" target="_blank">Home</a>
+    <a href="Home.html#history" target="_blank">History</a>
+    <a href="Home.html#culture"target="_blank">Culture</a>
+    <a href="Food.html" target="_blank">Food</a>
+    <a href="">Tourism</a>
+    <a href="Drink.html" target="_blank">Drink</a>
+    <a href="Animal.html" target="_blank">Animals</a>
+
+ </nav>
+   <img src="imgs/sedar.png" alt="Lebanon Cedar" >
+
+</header>
+	<body>
+    	  <div class="blurred-background"><img src="imgs/Places.webp" alt="Tourism places"></div> 
+	  <main>
+      <div>
+        <h1>Some of Best Tourism Places to visit in Lebanon:</h1>
+          <ul>
+             <li class="left" id="div1"><a href="https://maps.app.goo.gl/8yXAbpiAXBwdreWu9" target="_blank">
+              <img   src="imgs/Beirute.webp" alt="Beirut" ></a>
+               <ul class="places">     
+                <li class="right">Beirut Known as the "Paris of the Middle East," Beirut has a dynamic mix of modern and traditional elements. Key spots include the Corniche waterfront, National Museum of Beirut, Hamra Street for shopping, and Mar Mikhael for nightlife. </li>
+               </ul>    
+             </li>    
+              <a href="https://maps.app.goo.gl/mjqBLW4EqcYFF9E29" target="_blank" >
+             <li class="right " id="div3"><a href="https://maps.app.goo.gl/mjqBLW4EqcYFF9E29" target="_blank" >        
+              <img  src="imgs/Byblos(jbeil).webp" alt="byblos jbeil" ></a>
+               <ul class="places">
+                <li class="left">Byblos (Jbeil):One of the oldest continuously inhabited cities, Byblos has ancient ruins, charming souks, and a beautiful harbor. Don't miss the Byblos Castle and the Old Souk for a journey through history.</li>
+               </ul>
+              </li>
+             <li class="left" id="div3"><a href="https://maps.app.goo.gl/mQa4FEubaUNEJrfr8" target="_blank">
+              <img src="imgs/Sour.webp" alt="Tyre (Sour)" ></a>
+               <ul class="places">      
+                 <li class="right">Tyre (Sour):A coastal city with rich Phoenician and Roman ruins, Tyre offers ancient sites, a beautiful harbor, and sandy beaches. The Roman Hippodrome and Al Mina archaeological site are highlights.</li>
+               </ul>
+             </li>
+             <li class="right" id="div1"><a href="https://maps.app.goo.gl/WjEevrqEbXHCGHNj9" target="_blank">
+              <img src="imgs/Qadisha.webp" alt="qadisha kadisha valley" ></a>
+               <ul class="places"> 
+                 <li class="left">Qadisha Valley:Known as the "Holy Valley," this scenic area has monasteries, hiking trails, and stunning mountain views. Monastery of Saint Anthony of Qozhaya is one of the oldest and a great place to start exploring.</li>
+               </ul>
+             </li>
+             <li class="left " id="div1"><a href="https://maps.app.goo.gl/FcubN6umBXFHeecr6" target="_blank">
+              <img  src="imgs/Baalbak.webp" alt="baalbak" ></a>
+                <ul class="places"> 
+                  <li class="right">Baalbak :This UNESCO World Heritage site is famous for its well-preserved Roman temples, including the Temple of Bacchus and Temple of Jupiter, which are among the most impressive ancient structures in the world.</li>
+                </ul>
+             </li>
+         </ul>
+       </div>
+	    
+	    
+	  </main>
+	  <footer>
+      <p>&copy; 2024 Discover Lebanon.\Done by: Jawad Khaled <a href="#top">Back to Top</a> </p>
+	  </footer>
+	</body>

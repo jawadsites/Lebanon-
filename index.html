@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Lebanon</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(to right, #d40000c9, #77901ea2, #007a33);
+            color: white;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            height: 100px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        header img {
+          position: absolute;
+          height: 150px; /* Adjust size as needed */
+          width: 200px;
+          bottom:0px ;
+          animation: img 10s linear infinite;
+          animation-fill-mode: forwards;
+        }
+        @keyframes img{
+            0%   {background-color:rgba(255, 174, 0, 0.68); left:0px;}
+            50%  {background-color:rgba(255, 0, 0, 0.632); left:1100px;}
+            100% { left:0px;}
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0px;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            position: relative;
+            animation:nav 3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes nav{
+            0%   {background-color:rgba(255, 174, 0, 0.68); left:0px;}
+            50%  {background-color:rgba(255, 0, 0, 0.632); left:200px;}
+            100% { left:0px;}
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .bouncing-box {
+            width: 400px;
+            height: 50px;
+            color:#5b3212;
+            background-color: linear-gradient(to right, #d40000, #77901ec1, #007a33);;
+            position: relative;
+            border-radius: 10px;
+            animation: box 3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes box {
+            0%   {background-color:rgba(255, 174, 0, 0.68); left:0px; top:0px;}
+            25%  {background-color:rgba(255, 0, 0, 0.632); left:0px; top:100px;}
+            50%  {background-color:rgba(0, 0, 255, 0.452); left:250px; top:0px;}
+            75%  {background-color:rgba(0, 128, 0, 0.372); left:250px; top:100px;}
+            100% {background-color: linear-gradient(to right, #d40000, #77901ec1, #007a33);;  left:430px; top:0px;}
+        }
+        .vid{
+            position: relative;
+            padding-left: 20%;;
+            justify-content: center;
+            align-items: center; 
+            height: 400px;
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        /* Hero Section */
+        .hero {
+            background-image: url(imgs/Lebanon.webp); /* Replace with a real image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            width:100%;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 2rem 5%;
+            line-height: 1.8;
+        }
+
+        section h3 {
+            color: #d40000;
+            margin-bottom: 1rem;
+        }
+
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card .card-body {
+            padding: 1rem;
+        }
+
+        .card .card-body h4 {
+            margin: 0 0 0.5rem;
+            color: #007a33;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #007a33;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="bouncing-box img">Discover Lebanon</h1>
+    <nav>
+        <a href="">Home</a>
+        <a href="#history">History</a>
+        <a href="#culture">Culture</a>
+        <a href="Food.html" target="_blank">Food</a>
+        <a href="Tourism.html"target="_blank">Tourism</a>
+        <a href="Drink.html" target="_blank">Drink</a>
+        <a href="Animal.html" target="_blank">Animals</a>
+     </nav>
+    <img src="imgs/sedar.png" alt="Lebanon Cedar" >
+</header>
+<body>
+    
+<div class="hero">
+    <h2>Welcome to the Land of Cedars</h2>
+</div>
+<div ><iframe class="vid"  src="https://www.youtube.com/embed/E6vNlNGCq6s?si=OfY3aFhRq7M-3N7z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<p class="a">
+<section id="history">
+    <h3>History of Lebanon</h3>
+    <p>Lebanon has a rich and diverse history that spans thousands of years.Lebanon’s history reflects its strategic location and cultural diversity. It began with the Phoenicians (3000 BCE), a seafaring civilization that created the first alphabet. Later, it was ruled by empires such as the Assyrians, Babylonians, and Persians. Under Alexander the Great, it became part of the Hellenistic world, and during the Roman era, cities like Baalbek thrived.</p>
+    <p>In the Middle Ages, Lebanon saw Islamic rule and became a focus during the Crusades, with mountain areas becoming safe havens for Maronites and Druze. The Ottoman Empire governed Lebanon from 1516 to 1918, allowing some local autonomy, especially in Mount Lebanon.</p>
+        
+    <p> After World War I, Lebanon was placed under French mandate until it gained independence in 1943, establishing a unique confessional political system. However, it suffered from a devastating civil war (1975–1990), marked by sectarian conflict. Since then, Lebanon has struggled with political and economic challenges but remains known for its cultural richness and diversity.</p>
+</section>
+
+<section id="culture">
+    <h3>Lebanese Culture</h3>
+    <div class="section-content">
+        <div class="card">
+            <img src="imgs/Lebanese Dabke.webp" alt="Dabke Dance">
+            <div class="card-body">
+                <h4>Traditional Dance</h4>
+                <p>Lebanese Dabke is a traditional folk dance originating from the Levant region, particularly popular in Lebanon. It is a vibrant and rhythmic group dance performed at celebrations like weddings, festivals, and cultural events. </p>
+                <p>Dancers form a line or a circle, hold hands, and step in synchronized movements, led by a leader called the "raas" (head). The steps are energetic, featuring stomping, kicking, and intricate footwork that reflects the strength and unity of the group. Dabke is often accompanied by lively music played on traditional instruments like the *tablah* (drum) and *mijwiz* (reed flute), making it a festive and expressive part of Lebanese culture.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imgs/Lebanese Architecture.webp" alt="Lebanese Architecture">
+            <div class="card-body">
+                <h4>Architecture</h4>
+                <p>Lebanese architecture blends history and culture,
+                     showcasing influences from Phoenician, Roman, Ottoman, and modern styles.
+                      Traditional homes feature red-tiled roofs, triple-arched windows, 
+                      and stone construction. Ancient ruins like Baalbek highlight grand columns and temples, 
+                      while Islamic designs bring domes and intricate patterns. In cities like Beirut,
+                       modern skyscrapers mix with preserved heritage buildings. 
+                       This fusion of old and new reflects Lebanon’s rich and diverse identity..
+                    </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imgs/Lebanese religions.webp" alt="Lebanese religions">
+            <div class="card-body">
+                <h4> Religions</h4>
+                <p>Lebanon is known for its religious diversity, with 18 recognized religious sects,
+                 including various Christian denominations (e.g., Maronite Catholics, Greek Orthodox)
+                  and Muslim groups (Sunni, Shia, Druze). Coexistence is rooted in the country's political system,
+                 which is based on sectarian power-sharing. The president is traditionally a Maronite Christian,
+                the prime minister a Sunni Muslim, and the speaker of parliament a Shia Muslim. This system, known as confessionalism,
+                 was established after Lebanon's independence to ensure that no group dominated the others.</p>
+                <p>Despite this framework, coexistence is often delicate.
+                 Religious groups maintain their own institutions, schools, 
+                 and political parties, and tensions occasionally arise,
+                 especially during times of political or economic crises.
+                 However, Lebanon's pluralism and its shared history of coexistence
+                make it a unique example of religious diversity in the Arab world.</p>
+            </div>
+        </div>        
+    </div>
+</section>
+
+<section id="food">
+    <h3>Lebanese Food</h3>
+    <p>Enjoy the delicious cuisine of Lebanon, from hummus to <a href="Food.html">See More....</a></p>
+</section>
+
+<section id="tourism">
+    <h3>Tourist Attractions</h3>
+    <p>Visit Baalbek, the Jeita Grotto, and the stunning coastline<a href="Tourism.html">See More....</a></p>
+</section>
+<section id="Drink">
+    <h3>lebanese Drinks</h3>
+    <p>Visit Baalbek, the Jeita Grotto, and the stunning coastline<a href="Drink.html">See More...</a></p>
+</section>
+<section id="animals">
+    <h3>Lebanon’s Animals</h3>
+    <p>Lebanon is home to diverse wildlife, including iconic species like the striped hyena and Lebanese cedar-associated fauna.<a href="Animal.html">See More...</a></p>
+</section>
+<footer>
+    <p>&copy; 2024 Discover Lebanon.\Done by: Jawad Khaled <a href="#top">Back to Top</a> </p>
+</footer>
+
+</body>
+</html>
