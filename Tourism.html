@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Tourism Attractions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8"/>
   <style>
         /* Header Styling */
@@ -15,22 +16,22 @@
             position: sticky;
             top: 0;
             z-index: 10;
-            height: 100px;
+            height: 50%;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             width: 100%;
         }
         header img {
           position: absolute;
-          height: 150px; /* Adjust size as needed */
-          width: 200px;
+          height: 100%; /* Adjust size as needed */
+          width: 20%;
           bottom:0px ;
           animation: img 10s linear infinite;
           animation-fill-mode: forwards;
         }
         @keyframes img{
-            0%   {background-color:rgba(255, 174, 0, 0.68); left:0px;}
-            50%  {background-color:rgba(255, 0, 0, 0.632); left:1100px;}
-            100% { left:0px;}
+            0%   {background-color:rgba(255, 174, 0, 0.68); left:0%;}
+            50%  {background-color:rgba(255, 0, 0, 0.632); left:100%;}
+            100% { left:0%;}
         }
         header h1 {
             font-size: 2.5rem;
@@ -51,17 +52,17 @@
             animation-fill-mode: forwards;
         }
         @keyframes nav{
-            0%   {background-color:rgba(255, 174, 0, 0.68); left:0px;}
-            50%  {background-color:rgba(255, 0, 0, 0.632); left:200px;}
-            100% { left:0px;}
+            0%   {background-color:rgba(255, 174, 0, 0.68); left:0%;}
+            50%  {background-color:rgba(255, 0, 0, 0.632); left:50%;}
+            100% { left:0%;}
         }
         nav a:hover {
             text-decoration: underline;
         }
 
         .bouncing-box {
-            width: 400px;
-            height: 50px;
+            width: 40%;
+            height: 30%;
             color:#5b3212;
             background-color: linear-gradient(to right, #d40000, #77901ec1, #007a33);;
             position: relative;
@@ -71,14 +72,14 @@
             
         }
         @keyframes box {
-            0%   {background-color:rgba(255, 174, 0, 0.68); left:0px; top:0px;}
-            25%  {background-color:rgba(255, 0, 0, 0.632); left:0px; top:100px;}
-            50%  {background-color:rgba(0, 0, 255, 0.452); left:100px; top:0px;}
-            75%  {background-color:rgba(0, 128, 0, 0.372); left:200px; top:100px;}
-            100% {background-color: linear-gradient(to right, #d40000, #77901ec1, #007a33);;  left:430px; top:0px;}
+            0%   {background-color:rgba(255, 174, 0, 0.68); left:0%; top:0px;}
+            25%  {background-color:rgba(255, 0, 0, 0.632); left:0%; top:100px;}
+            50%  {background-color:rgba(0, 0, 255, 0.452); left:10%; top:0px;}
+            75%  {background-color:rgba(0, 128, 0, 0.372); left:20%; top:100px;}
+            100% {background-color: linear-gradient(to right, #d40000, #77901ec1, #007a33);;  left:30%; top:0px;}
         }
         .blurred-background {
-          background-image: url(lebanese\ food.jpg);
+          background-image: url(imgs/Places.webp);
            position: fixed;
            top: 0;
            left: 0;
@@ -89,18 +90,13 @@
            filter: blur(4px);
             z-index: -1;
         }
-        .img {
-            width: 300px;
-            height: 50px;
-            object-fit: cover;
-        }
         /*places section style*/
         ul{
           list-style-type: none;
         }
         li img{
-          width:600px ;
-          height:400px ;
+          width:60% ;
+          height:20% ;
         }
         .places {
           font-size: 20px;
@@ -115,7 +111,7 @@
 
         .right{
           padding:10px;
-          right:-1300px;
+          right:-100%;
           direction: rtl;
           text-align: right;
           position: relative;
@@ -124,20 +120,17 @@
         }
         .left{
           position: relative;
-          left:-1300px;
+          left:-100%;
           animation:place-left 3s;
           animation-fill-mode: forwards;
         }
-        .imgs{
-          width:400px ;
-          height:200px ;
-        }
+
         @keyframes place-left{
-             from { left:-1300px;}
+             from { left:-100%;}
             to { left:0px;}
         }
         @keyframes place-right{
-             from { right:-1300px;}
+             from { right:-100%;}
             to { right:0px;}
         }
             footer {
@@ -166,7 +159,7 @@
 <header>
   <h1 class="bouncing-box">Lebanese Tourism</h1>
   <nav>
-    <a href="Home.html" target="_blank">Home</a>
+    <a href="index.html" target="_blank">Home</a>
     <a href="Home.html#history" target="_blank">History</a>
     <a href="Home.html#culture"target="_blank">Culture</a>
     <a href="Food.html" target="_blank">Food</a>
@@ -179,7 +172,7 @@
 
 </header>
 	<body>
-    	  <div class="blurred-background"><img src="imgs/Places.webp" alt="Tourism places"></div> 
+    	  <div class="blurred-background"></div> 
 	  <main>
       <div>
         <h1>Some of Best Tourism Places to visit in Lebanon:</h1>
@@ -224,3 +217,4 @@
       <p>&copy; 2024 Discover Lebanon.\Done by: Jawad Khaled <a href="#top">Back to Top</a> </p>
 	  </footer>
 	</body>
+</html>
